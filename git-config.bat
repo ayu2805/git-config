@@ -8,6 +8,3 @@ ssh-keygen -t ed25519 -C "%git_email%"
 git config --global gpg.format ssh
 git config --global user.signingkey  C:/Users/%username%/.ssh/id_ed25519.pub
 git config --global commit.gpgsign true
-
-echo.
-pause
