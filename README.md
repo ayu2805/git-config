@@ -10,11 +10,19 @@ irm https://raw.githubusercontent.com/ayu2805/git-config/main/git-config.ps1 | i
 ```
 I don't know why you need this but for Windows 7 download the .bat file from this [link](https://github.com/ayu2805/git-config/releases/latest/download/git-config.bat).
 
-#### To install chocolatey and scoop run this command in Powershell as Administrator:
+#### To install chocolatey run this command in Powershell as Administrator:
 ```
-Set-ExecutionPolicy RemoteSigned; iex "& {$(irm get.scoop.sh)} -RunAsAdmin"; irm https://community.chocolatey.org/install.ps1 | iex
+Set-ExecutionPolicy RemoteSigned; irm https://community.chocolatey.org/install.ps1 | iex
 ```
-Make sure you have uninstalled existing scoop and chocolatey by running `scoop uninstall scoop` and/or `rm -r C:\ProgramData\chocolatey`
+
+Make sure you have uninstalled existing scoop and chocolatey by running `rm -r C:\ProgramData\chocolatey`.
+
+#### To install scoop run this command in Powershell as Administrator:
+```
+Set-ExecutionPolicy RemoteSigned; iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+```
+
+Make sure you have uninstalled existing scoop and chocolatey by running `scoop uninstall scoop`.
 
 ## For Linux:
 ```
