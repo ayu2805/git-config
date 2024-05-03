@@ -15,14 +15,14 @@ I don't know why you need this but for Windows 7 download the .bat file from thi
 Set-ExecutionPolicy RemoteSigned; irm https://community.chocolatey.org/install.ps1 | iex
 ```
 
-Make sure you have uninstalled existing scoop and chocolatey by running `rm -r C:\ProgramData\chocolatey`.
+Make sure you have uninstalled existing chocolatey by running `rm -r C:\ProgramData\chocolatey`.
 
 #### To install scoop run this command in Powershell as Administrator:
 ```
 Set-ExecutionPolicy RemoteSigned; iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
 ```
 
-Make sure you have uninstalled existing scoop and chocolatey by running `scoop uninstall scoop`.
+Make sure you have uninstalled existing scoop by running `scoop uninstall scoop`.
 
 ## For Linux:
 ```
